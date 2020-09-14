@@ -5,8 +5,6 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = 1.96;
         requiredAddons[] = {
-            "cba_main",
-            "ace_ballistics",
             "FIR_PilotCrewPack_US"
         };
         author = "johnb43";
