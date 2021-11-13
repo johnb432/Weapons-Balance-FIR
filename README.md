@@ -1,8 +1,8 @@
-# Changelog for Weapons balance 29.7.2020
-- Models/Icons/Names:
-    - FIR
-        - Removed protection on both Ground Crew Headsets and Navy Safety Helmet
-        - Changed names on all helmet that had brackets in them for spacing reasons
-        - Changed names of USMC helmets to camo names (MARPAT D, MARPAT WD)
-        - Changed names of US ARMY Helicopter uniforms
-        - Fixed some typos in names
+The "Weapons Balance" collection aims to rebalance other mods.
+This rebalancing effort includes:
+* Weight balancing for weapons, magazines and other equipment.
+* Adding compatibility for various mods such as TFAR, ACE and BettIR.
+* Adding magazine and weapon attachments compatibility.
+* Various fixes and additions.
+
+Credit to all the various mod authors.
