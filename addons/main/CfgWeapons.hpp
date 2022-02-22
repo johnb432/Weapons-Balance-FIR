@@ -21,9 +21,9 @@ class CfgWeapons {
     class FIR_GroundCrew_Headset: H_PilotHelmetHeli_B {
         descriptionShort = "No Armor";
         class ItemInfo: ItemInfo {
-                class HitpointsProtectionInfo {
-                    class Head {
-                        armor = 0;
+            class HitpointsProtectionInfo {
+                class Head {
+                    armor = 0;
                 };
             };
         };
