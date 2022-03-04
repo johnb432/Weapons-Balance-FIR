@@ -1,6 +1,4 @@
 class CfgWeapons {
-    class ItemCore;
-    class HeadgearItem;
     class Uniform_Base;
     class H_CrewHelmetHeli_B;
     class U_B_PilotCoveralls;
@@ -11,11 +9,9 @@ class CfgWeapons {
     class FIR_USHelmetType1;
     class FIR_USHelmetType2;
 
-    class H_HelmetB: ItemCore {
-        class ItemInfo: HeadgearItem {};
-    };
+    class H_HelmetB;
     class H_PilotHelmetHeli_B: H_HelmetB {
-        class ItemInfo: ItemInfo {};
+        class ItemInfo;
     };
 
     class FIR_GroundCrew_Headset: H_PilotHelmetHeli_B {
@@ -51,6 +47,10 @@ class CfgWeapons {
         };
     };
 
+    class FIR_HGU33P_up: FIR_HGU33P {
+        displayName = "HGU-33/P (visor up)";
+    };
+
     class FIR_hgu26p_camo: FIR_HGU33P {
         displayName = "HGU-26/P (Camo)";
     };
@@ -60,7 +60,7 @@ class CfgWeapons {
     class FIR_hgu26p_camo_openmask: FIR_HGU33P {
         displayName = "HGU-26/P (Camo)";
     };
-    class FIR_hgu26p_camo_up: FIR_HGU33P {
+    class FIR_hgu26p_camo_up: FIR_HGU33P_up {
         displayName = "HGU-26/P (Camo)";
     };
     class FIR_hgu26p_camo_up_nomask: FIR_HGU33P {
@@ -68,10 +68,6 @@ class CfgWeapons {
     };
     class FIR_hgu26p_camo_up_openmask: FIR_HGU33P {
         displayName = "HGU-26/P (Camo)";
-    };
-
-    class FIR_HGU33P_up: FIR_HGU33P {
-        displayName = "HGU-33/P (visor up)";
     };
 
     class FIR_HGU33P_VF1: FIR_HGU33P {
@@ -135,7 +131,7 @@ class CfgWeapons {
     class FIR_HGU84P_Marpat_D: FIR_HGU84P {
         displayName = "HGU-84/P (MARPAT D)";
     };
-    class FIR_HGU84P_Marpat_W: FIR_HGU84P {
+    class FIR_HGU84P_Marpat_W: FIR_HGU84P_Marpat_D {
         displayName = "HGU-84/P (MARPAT WD)";
     };
 
@@ -162,7 +158,7 @@ class CfgWeapons {
     class FIR_USHelmetType1_Agg_nomask: H_PilotHelmetHeli_B {
         displayName = "HGU-55/P / MBU-20/P (no mask)";
     };
-    class FIR_USHelmetType1_Agg_openmask: FIR_USHelmetType1_Navy {
+    class FIR_USHelmetType1_Agg_openmask: H_PilotHelmetHeli_B {
         displayName = "HGU-55/P / MBU-20/P (open mask)";
     };
 
