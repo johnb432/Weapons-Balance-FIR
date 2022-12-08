@@ -1,3 +1,9 @@
+# Changelog for Weapons balance 8.12.2022
+
+1.0.0.4
+- Added main menu panels back.
+- Fixed systemChat messages being spammed globally.
+
 # Changelog for Weapons balance 4.3.2022
 
 1.0.0.3

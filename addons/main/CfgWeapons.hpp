@@ -1,4 +1,27 @@
 class CfgWeapons {
+    class MissileLauncher;
+    class FIR_GPSMissileLauncher: MissileLauncher {
+        class EventHandlers {
+            fired = "if !(local (_this select 7)) exitWith {}; [_this] execVM '\FIR_AirWeaponSystem_US\script\TGTSystem\FCS\GPS_CG_MSSL_EH.sqf';[_this] execVM '\FIR_AirWeaponSystem_US\script\TGTSystem\FCS\CG_MSSL_EH.sqf';";
+        };
+    };
+
+    class Mk82BombLauncher;
+    class FIR_GuidedBombLauncher: Mk82BombLauncher {
+        class EventHandlers  {
+            class FIR_GPS_EH {
+                fired = "if !(local (_this select 7)) exitWith {}; [_this] execVM '\FIR_AirWeaponSystem_US\Script\TGTSystem\FCS\GuidedBomb_EH.sqf';";
+            };
+        };
+    };
+    class FIR_GPSClusterBombLauncher: Mk82BombLauncher {
+        class EventHandlers {
+            class FIR_Cluster_EH {
+                fired = "if !(local (_this select 7)) exitWith {}; [_this] execVM '\FIR_AirWeaponSystem_US\Script\TGTSystem\FCS\GuidedBomb_EH.sqf';[_this] execVM '\FIR_AirWeaponSystem_US\Script\TGTSystem\FCS\Cluster_EH.sqf';";
+            };
+        };
+    };
+
     class Uniform_Base;
     class H_CrewHelmetHeli_B;
     class U_B_PilotCoveralls;

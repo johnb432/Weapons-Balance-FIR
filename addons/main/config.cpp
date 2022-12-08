@@ -7,7 +7,9 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "FIR_PilotCrewPack_US"
+            "FIR_PilotCrewPack_US",
+            "FIR_AirWeaponSystem_US",
+            "FIR_AWS_Cutscene_F"
         };
         author = "johnb43";
         authors[] = {"johnb43"};
@@ -17,3 +19,10 @@ class CfgPatches {
 };
 
 #include "CfgWeapons.hpp"
+#include "CfgSpotlight.hpp"
+
+class CfgUnitInsignia {
+    class Emblem_505 {
+        displayName = "505th JFW - Mirage Witches Emblem";
+    };
+};
