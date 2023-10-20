@@ -12,7 +12,9 @@ class CfgPatches {
             "FIR_AWS_Cutscene_F"
         };
         author = "johnb43";
-        authors[] = {"johnb43"};
+        authors[] = {
+            "johnb43"
+        };
         url = "https://github.com/johnb432/Weapons-Balance-FIR";
         VERSION_CONFIG;
     };
